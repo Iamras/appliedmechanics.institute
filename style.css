@@ -4,22 +4,34 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: url(https://iam.ras.ru/wp-content/themes/lib/img/DSC_8063.jpg);
-    background-image: url(https://live.staticflickr.com/65535/48853166521_6039ee57d8_o.jpg);
-
+  background-image: url(https://live.staticflickr.com/65535/48853166521_6039ee57d8_o.jpg);
 }
 .block {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   flex-wrap: nowrap;
-  height: 100vh;
+  min-height: 100vh;
   color: #fff;
+}
+.block:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #222;
+  opacity: 0.8;
 }
 .block .inner {
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 .block .inner h1 {
   margin: 0;
