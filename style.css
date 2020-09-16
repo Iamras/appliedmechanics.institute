@@ -4,6 +4,8 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: url(https://iam.ras.ru/wp-content/themes/lib/img/DSC_8063.jpg);
+    background-image: url(https://live.staticflickr.com/65535/48853166521_6039ee57d8_o.jpg);
+
 }
 .block {
   display: -webkit-box;
