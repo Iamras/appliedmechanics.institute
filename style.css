@@ -1,0 +1,40 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(https://iam.ras.ru/wp-content/themes/lib/img/DSC_8063.jpg);
+}
+.block {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  flex-wrap: nowrap;
+  height: 100vh;
+  color: #fff;
+}
+.block .inner {
+  text-align: center;
+}
+.block .inner h1 {
+  margin: 0;
+  font-size: 4em;
+  line-height: 1;
+  position: relative;
+  font-weight: 700;
+}
+.block .inner h1 span {
+  color: #666;
+  position: absolute;
+  left: 100%;
+  font-weight: 100;
+}
+.block .inner p {
+  line-height: 1;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
