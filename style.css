@@ -60,5 +60,7 @@ body {
 .block .inner p a {
   display: inline-block;
   background-color: #fff;
-  padding: 0.2em 0.3em;
+  padding: 0.4em 0.3em;
+  text-decoration: none;
+  color: #e74c3c;
 }
