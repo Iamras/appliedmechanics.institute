@@ -51,20 +51,23 @@ body {
 }
 .menu {
   position: fixed;
-  bottom: 0;
   right: 0;
   left: 0;
   width: 100%;
   z-index: 99;
 }
+.menu.top {
+  top: 0;
+}
+.menu.bottom {
+  bottom: 0;
+}
 .menu ul {
-  width: 100%;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+  padding: 2em 0;
+  margin: 0 auto;
+  width: 80%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .menu ul li {
   display: block;
@@ -81,4 +84,13 @@ body {
 }
 .menu ul li a:hover {
   background-color: #ecf0f1;
+}
+.menu .logotype .dot {
+  margin: 0 0.3em;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  line-height: 1;
+  border-radius: 50%;
+  background-color: #fff;
 }
