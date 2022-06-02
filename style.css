@@ -38,7 +38,7 @@ body {
 }
 .block .inner h1 {
   margin: 0;
-  font-size: 4em;
+  font-size: 6em;
   line-height: 1;
   position: relative;
   font-weight: 700;
@@ -51,16 +51,39 @@ body {
   font-weight: 100;
   display: none;
 }
-.block .inner p {
-  line-height: 1;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
 }
-.block .inner p a {
+.menu ul {
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-evenly;
+}
+.menu ul li {
+  display: block;
+}
+.menu ul li a {
   display: inline-block;
   background-color: #fff;
   padding: 0.4em 0.3em;
   text-decoration: none;
   color: #e74c3c;
+  line-height: 1;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.menu ul li a:hover {
+  color: #f1c40f;
+  background-color: #3498db;
+  font-weight: 600;
 }
