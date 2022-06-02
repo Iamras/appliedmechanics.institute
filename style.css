@@ -47,15 +47,24 @@ body {
 }
 .block .inner h1 span {
   display: block;
+  position: relative;
 }
 .block .inner h1 span:nth-child(1) {
   margin-left: 1.03em;
 }
-.block .inner h1 span:nth-child(1) em {
-  font-weight: 100;
-}
 .block .inner h1 span:nth-child(2) {
   margin-left: -0.75em;
+}
+.block .inner h1 span em {
+  position: absolute;
+  right: 100%;
+  font-weight: lighter;
+  display: block;
+  font-size: 0.8em;
+  margin-right: 0.3em;
+  bottom: 0.1em;
+  color: #444;
+  font-family: 'Noto Serif', serif;
 }
 .menu {
   position: fixed;
