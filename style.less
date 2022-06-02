@@ -1,0 +1,98 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+ 
+  background-image: url(https://live.staticflickr.com/65535/48853166521_6039ee57d8_o.jpg);
+}
+.block {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+
+    @colores: #d35400;
+    
+    &:before {
+        content: ' ';
+        position: absolute;
+        top: 0; bottom: 0;
+        right: 0; left: 0;
+        z-index: 1;
+        background-color: #222;
+        background-color: @colores;
+        opacity: 1;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-image: url(mt.png);
+    }
+    .inner {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+
+        h1 {
+            margin: 0;
+            font-size: 6em;
+            line-height: 1;
+            position: relative;
+            font-weight: 700;
+            color: #222;
+            color: @colores;
+
+            span {
+                font-weight: 100;
+            }
+        }
+    }
+}
+
+
+.menu {
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    width: 100%;
+    z-index: 99;
+        
+    ul {
+        width: 100%;
+        
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-evenly;
+        
+        li {
+            display: block;
+           // margin-bottom: 0.2em;
+
+            a {
+                display: inline-block;
+                background-color: #fff;
+                padding: 0.4em 0.3em;
+                text-decoration: none;
+                color: #222;
+                line-height: 1;
+                font-weight: 300;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                
+                &:hover {
+                    
+                    background-color:#ecf0f1;
+                    
+                }
+            }
+        }
+    }
+    
+}
