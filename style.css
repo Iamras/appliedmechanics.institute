@@ -33,7 +33,6 @@ body {
   background-image: url(mt.png);
 }
 .block .inner {
-  text-align: center;
   position: relative;
   z-index: 2;
 }
@@ -45,9 +44,12 @@ body {
   font-weight: 700;
   color: #222;
   color: #f39c12;
+  line-height: 0.8;
 }
 .block .inner h1 span {
   font-weight: 100;
+  padding-left: 0.1em;
+  display: block;
 }
 .menu {
   position: fixed;
