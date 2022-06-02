@@ -55,7 +55,7 @@ body {
   font-weight: 100;
 }
 .block .inner h1 span:nth-child(2) {
-  margin-left: -1em;
+  margin-left: -0.75em;
 }
 .menu {
   position: fixed;
