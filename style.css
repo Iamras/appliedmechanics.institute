@@ -42,14 +42,20 @@ body {
   line-height: 1;
   position: relative;
   font-weight: 700;
-  color: #222;
-  color: #f39c12;
+  color: #333;
   line-height: 0.8;
 }
 .block .inner h1 span {
-  font-weight: 100;
-  padding-left: 0.1em;
   display: block;
+}
+.block .inner h1 span:nth-child(1) {
+  margin-left: 1.03em;
+}
+.block .inner h1 span:nth-child(1) em {
+  font-weight: 100;
+}
+.block .inner h1 span:nth-child(2) {
+  margin-left: -1em;
 }
 .menu {
   position: fixed;
